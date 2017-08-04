@@ -9,7 +9,8 @@
         "laravel/framework": "5.3.*",
         "dwij/laraadmin": "dev-master",
 		"elasticquent/elasticquent": "dev-master",
-        "dwij/laeditor": "^0.1.6"
+        "dwij/laeditor": "^0.1.6",
+	"overtrue/laravel-lang":"~3.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
