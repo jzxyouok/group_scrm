@@ -13,7 +13,6 @@ return [
     |
     */
 
-    'modules' => 'Modules',
-    'dashboard' => 'Dashboard'
-
+    'modules' => '模块',
+    'dashboard' => '主页'
 ];

@@ -4,7 +4,7 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Password Reset Language Lines
+    | Password Reminder Language Lines
     |--------------------------------------------------------------------------
     |
     | The following language lines are the default lines which match reasons
@@ -13,7 +13,10 @@ return [
     |
     */
 
-    'modules' => 'Modules',
-    'dashboard' => 'Dashboard'
+    'password' => 'Açarsöz 6 harpdan ybarat bolup, tassyklamasy bilen deň bolmaly.',
+    'reset'    => 'Açarsöz üýtgedildi!',
+    'sent'     => 'Açarsöz ýatlatmasy ugradyldy!',
+    'token'    => 'Açarsöz tazeleme söz birligi ýalňyş.',
+    'user'     => 'Bu e-mail adrese degişli ulanyjy tapylmady.',
 
 ];
