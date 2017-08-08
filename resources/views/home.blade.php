@@ -52,13 +52,13 @@
         </div>
         <div class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="#home" class="smoothScroll">Home</a></li>
-                <li><a href="#about" class="smoothScroll">About</a></li>
-                <li><a href="#contact" class="smoothScroll">Contact</a></li>
+                <li class="active"><a href="#home" class="smoothScroll"><?php echo trans('home.home'); ?></a></li>
+                <li><a href="#about" class="smoothScroll"><?php echo trans('home.about'); ?></a></li>
+                <li><a href="#contact" class="smoothScroll"><?php echo trans('home.contact'); ?></a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
                 @if (Auth::guest())
-                    <li><a href="{{ url('/login') }}">Login</a></li>
+                    <li><a href="{{ url('/login') }}"><?php echo trans('setting.login'); ?></a></li>
                     <!--<li><a href="{{ url('/register') }}">Register</a></li>-->
                 @else
                     <li><a href="{{ url(config('laraadmin.adminRoute')) }}">{{ Auth::user()->name }}</a></li>
@@ -160,7 +160,7 @@
 <div id="footerwrap">
     <div class="container">
         <div class="col-lg-5">
-            <h3>Contact Us</h3><br>
+            <h3><?php echo trans('home.contact'); ?></h3><br>
             <p>
 				Dwij IT Solutions,<br/>
 				Web Development Company in Pune,<br/>
@@ -168,29 +168,29 @@
                 Opp. PICT College,<br/>
                 Katraj, Pune, India - 411046
             </p>
-			<div class="contact-link"><i class="fa fa-envelope-o"></i> <a href="mailto:hello@laraadmin.com">hello@laraadmin.com</a></div>
-			<div class="contact-link"><i class="fa fa-cube"></i> <a href="http://laraadmin.com">laraadmin.com</a></div>
-			<div class="contact-link"><i class="fa fa-building"></i> <a href="http://dwijitsolutions.com">dwijitsolutions.com</a></div>
+			<div class="contact-link"><i class="fa fa-envelope-o"></i> <a href="mailto:hello@laraadmin.com">soft@zflying.com.cn</a></div>
+			<div class="contact-link"><i class="fa fa-cube"></i> <a href="http://laraadmin.com">021-12345678</a></div>
+			<div class="contact-link"><i class="fa fa-building"></i> <a href="http://www.zheng-fei.com">www.zheng-fei.com</a></div>
         </div>
 
         <div class="col-lg-7">
-            <h3>Drop Us A Line</h3>
+            <h3><?php echo trans('home.feedback'); ?></h3>
             <br>
             <form role="form" action="#" method="post" enctype="plain">
                 <div class="form-group">
-                    <label for="name1">Your Name</label>
-                    <input type="name" name="Name" class="form-control" id="name1" placeholder="Your Name">
+                    <label for="name1"><?php echo trans('home.feedback_name'); ?></label>
+                    <input type="name" name="Name" class="form-control" id="name1" placeholder="<?php echo trans('home.feedback_name'); ?>">
                 </div>
                 <div class="form-group">
-                    <label for="email1">Email address</label>
-                    <input type="email" name="Mail" class="form-control" id="email1" placeholder="Enter email">
+                    <label for="email1"><?php echo trans('home.feedback_email'); ?></label>
+                    <input type="email" name="Mail" class="form-control" id="email1" placeholder="<?php echo trans('home.feedback_email'); ?>">
                 </div>
                 <div class="form-group">
-                    <label>Your Text</label>
+                    <label><?php echo trans('home.feedback_content'); ?></label>
                     <textarea class="form-control" name="Message" rows="3"></textarea>
                 </div>
                 <br>
-                <button type="submit" class="btn btn-large btn-success">SUBMIT</button>
+                <button type="submit" class="btn btn-large btn-success"><?php echo trans('common.submit'); ?></button>
             </form>
         </div>
     </div>
@@ -198,7 +198,7 @@
 <div id="c">
     <div class="container">
         <p>
-            <strong>Copyright &copy; 2016. Powered by <a href="https://dwijitsolutions.com"><b>Dwij IT Solutions</b></a>
+            <strong>Copyright &copy; 2015. 技术支持由<a href=""><b><?php echo trans('home.support'); ?></b></a>
         </p>
     </div>
 </div>

@@ -1,14 +1,14 @@
 @extends("la.layouts.app")
 
-@section("contentheader_title", "Permissions")
-@section("contentheader_description", "permissions listing")
-@section("section", "Permissions")
-@section("sub_section", "Listing")
-@section("htmlheader_title", "Permissions Listing")
+@section("contentheader_title", "权限")
+@section("contentheader_description", "权限列表")
+@section("section", "权限")
+@section("sub_section", "列表")
+@section("htmlheader_title", "权限列表")
 
 @section("headerElems")
 @la_access("Permissions", "create")
-	<button class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#AddModal">Add Permission</button>
+	<button class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#AddModal">新增权限</button>
 @endla_access
 @endsection
 

@@ -13,7 +13,6 @@ return [
     |
     */
 
-    'modules' => '模块',
-    'dashboard' => '主页',
-    'login' => '登入'
+    'submit' => '提交'
+
 ];

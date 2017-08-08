@@ -90,4 +90,10 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
 	/* ================== Tickets ================== */
 	Route::resource(config('laraadmin.adminRoute') . '/tickets', 'LA\TicketsController');
 	Route::get(config('laraadmin.adminRoute') . '/ticket_dt_ajax', 'LA\TicketsController@dtajax');
+
+    /* ================== Wechats ================== */
+    Route::resource(config('laraadmin.adminRoute') . '/wechats', 'LA\WechatsController');
+    Route::get(config('laraadmin.adminRoute') . '/wechat_dt_ajax', 'LA\WechatsController@dtajax');
+    //var_dump(config('laraadmin.adminRoute') . '/wechats/valid');
+    Route::get(config('laraadmin.adminRoute') . '/wechat/valid', 'LA\WechatsController@valid');
 });

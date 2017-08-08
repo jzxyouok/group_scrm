@@ -1,14 +1,14 @@
 @extends("la.layouts.app")
 
-@section("contentheader_title", "Employees")
-@section("contentheader_description", "employees listing")
-@section("section", "Employees")
-@section("sub_section", "Listing")
-@section("htmlheader_title", "Employees Listing")
+@section("contentheader_title", "员工")
+@section("contentheader_description", "员工列表")
+@section("section", "员工")
+@section("sub_section", "列表")
+@section("htmlheader_title", "员工列表")
 
 @section("headerElems")
 @la_access("Employees", "create")
-	<button class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#AddModal">Add Employee</button>
+	<button class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#AddModal">新增员工</button>
 @endla_access
 @endsection
 

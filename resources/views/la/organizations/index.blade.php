@@ -1,14 +1,14 @@
 @extends("la.layouts.app")
 
-@section("contentheader_title", "Organizations")
-@section("contentheader_description", "organizations listing")
-@section("section", "Organizations")
-@section("sub_section", "Listing")
-@section("htmlheader_title", "Organizations Listing")
+@section("contentheader_title", "组织")
+@section("contentheader_description", "组织列表")
+@section("section", "组织")
+@section("sub_section", "列表")
+@section("htmlheader_title", "组织列表")
 
 @section("headerElems")
 @la_access("Organizations", "create")
-	<button class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#AddModal">Add Organization</button>
+	<button class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#AddModal">新增组织</button>
 @endla_access
 @endsection
 

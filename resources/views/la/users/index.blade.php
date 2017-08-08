@@ -1,10 +1,10 @@
 @extends("la.layouts.app")
 
-@section("contentheader_title", "Users")
-@section("contentheader_description", "users listing")
-@section("section", "Users")
-@section("sub_section", "Listing")
-@section("htmlheader_title", "Users Listing")
+@section("contentheader_title", "用户")
+@section("contentheader_description", "用户列表")
+@section("section", "用户")
+@section("sub_section", "列表")
+@section("htmlheader_title", "用户列表")
 
 @section("headerElems")
 

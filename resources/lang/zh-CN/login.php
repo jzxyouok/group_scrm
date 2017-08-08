@@ -13,7 +13,11 @@ return [
     |
     */
 
-    'modules' => '模块',
-    'dashboard' => '主页',
-    'login' => '登入'
+    'box' => '开始你的旅行',
+    'email' => '邮箱',
+    'password' => '密码',
+    'remember_me' => '记住我',
+    'forgot_password' => '忘记密码?'
+    
+
 ];

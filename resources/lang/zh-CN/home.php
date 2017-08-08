@@ -13,7 +13,15 @@ return [
     |
     */
 
-    'modules' => '模块',
-    'dashboard' => '主页',
-    'login' => '登入'
+    'home' => '首页',
+    'about' => '关于',
+    'contact' => '联系我们',
+    'feedback' => '反馈',//Drop Us A Line
+    'feedback_name' => '姓名',
+    'feedback_email' => '邮箱',
+    'feedback_content' => '内容',
+
+    'support_label' => '技术支持由',
+    'support' => '上海正飞文化传播有限公司软件事业部'
+
 ];

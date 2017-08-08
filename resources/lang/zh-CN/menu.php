@@ -13,7 +13,12 @@ return [
     |
     */
 
-    'modules' => '模块',
-    'dashboard' => '主页',
-    'login' => '登入'
+    'uploads' => '附件',
+    'organizations' => '组织',
+    'team' => '团队',
+    'users' => '用户',
+    'departments' => '部门',
+    'roles' => '角色',
+    'employees' => '员工',
+    'permissions' => '权限',
 ];

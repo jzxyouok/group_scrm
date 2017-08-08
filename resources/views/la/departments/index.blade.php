@@ -1,14 +1,14 @@
 @extends("la.layouts.app")
 
-@section("contentheader_title", "Departments")
-@section("contentheader_description", "departments listing")
-@section("section", "Departments")
-@section("sub_section", "Listing")
-@section("htmlheader_title", "Departments Listing")
+@section("contentheader_title", "部门")
+@section("contentheader_description", "部门列表")
+@section("section", "部门")
+@section("sub_section", "列表")
+@section("htmlheader_title", "部门列表")
 
 @section("headerElems")
 @la_access("Departments", "create")
-	<button class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#AddModal">Add Department</button>
+	<button class="btn btn-success btn-sm pull-right" data-toggle="modal" data-target="#AddModal">新增部门</button>
 @endla_access
 @endsection
 
@@ -51,7 +51,7 @@
 		<div class="modal-content">
 			<div class="modal-header">
 				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-				<h4 class="modal-title" id="myModalLabel">Add Department</h4>
+				<h4 class="modal-title" id="myModalLabel">新增部门</h4>
 			</div>
 			{!! Form::open(['action' => 'LA\DepartmentsController@store', 'id' => 'department-add-form']) !!}
 			<div class="modal-body">
