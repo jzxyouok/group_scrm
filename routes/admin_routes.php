@@ -3,6 +3,7 @@
 /* ================== Homepage ================== */
 Route::get('/', 'HomeController@index');
 Route::get('/home', 'HomeController@index');
+Route::get('/wechat/valid', 'WechatController@valid');
 Route::auth();
 
 /* ================== Access Uploaded Files ================== */
@@ -95,5 +96,5 @@ Route::group(['as' => $as, 'middleware' => ['auth', 'permission:ADMIN_PANEL']], 
     Route::resource(config('laraadmin.adminRoute') . '/wechats', 'LA\WechatsController');
     Route::get(config('laraadmin.adminRoute') . '/wechat_dt_ajax', 'LA\WechatsController@dtajax');
     //var_dump(config('laraadmin.adminRoute') . '/wechats/valid');
-    Route::get(config('laraadmin.adminRoute') . '/wechat/valid', 'LA\WechatsController@valid');
+    
 });

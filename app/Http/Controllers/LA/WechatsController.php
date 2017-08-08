@@ -52,26 +52,6 @@ class WechatsController extends Controller
             return redirect(config('laraadmin.adminRoute') . "/");
         }
     }
-
-    public function valid(){
-        $wechat = Wechat::find(1);
-        var_dump($wechat->app_id);
-        var_dump($wechat->secret);
-        var_dump($wechat->token);
-        var_dump($wechat->aes_key);
-        $options = array(
-            'app_id' => $wechat->app_id,
-            'secret' => $wechat->secret,
-            'token'  => $wechat->token,
-            'aes_key' => $wechat->aes_key // 可选
-        );
-
-        $app = new Application($options);
-        
-        $response = $app->server->serve();
-        return $response;
-        //echo "3";die;
-    }
     
     /**
      * Show the form for creating a new wechat.
